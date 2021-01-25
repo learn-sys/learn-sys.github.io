@@ -18,7 +18,7 @@ function expand_toc() {
         scrollSmooth: false,
     })
     b.setAttribute("onclick", "collapse_toc()")
-    b.innerHTML = "全部收起"
+    b.innerHTML = "Collapse all"
 }
 
 function collapse_toc() {
@@ -32,7 +32,7 @@ function collapse_toc() {
         scrollSmooth: false,
     })
     b.setAttribute("onclick", "expand_toc()")
-    b.innerHTML = "全部展开"
+    b.innerHTML = "Expand all"
 }
 
 function go_top() {

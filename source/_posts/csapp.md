@@ -5,4 +5,4 @@ post_meta: false
 
 # Computer Systems: A Programmer's Perspective
 
-暂无介绍，等待大佬补充
+Volunteers are needed to build this site.
