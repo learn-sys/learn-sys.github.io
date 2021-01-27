@@ -11,7 +11,8 @@ This is a volunteer-driven community that aims at providing a communication plat
 ## Courses and Activities
 
 * CMU CSAPP: Introduction to Computer Systems :fire:
-* MIT 6.S081/6.828: Build the OS yourself
+* MIT 6.S081/6.828: Build the OS Yourself
+* MIT 6.824: Distributed System
 
 ## Call for Attendees
 
