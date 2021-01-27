@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/en/favicon.png" />
+    
+
+    <title>
+        
+          Proposal for a Reading Group - LearnSys
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/en/css/book.css">
+
+    
+<script src="/en/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/en/">
+    <img src="/en/favicon.png">
+    <span>LEARNSYS</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <ul>
+<li><a href="/en"><strong>Home</strong></a></li>
+</ul>
+<h1 id="Courses-and-Activities"><strong>Courses and Activities</strong></h1>
+<ul>
+<li><a href="/en/csapp">CSAPP</a></li>
+<li><a href="/en/6s081">6.S081/6.828</a></li>
+<li><a href="/en/6824">6.824</a></li>
+<li><a href="/en/reading">Reading Group</a></li>
+</ul>
+<h1 id="Archives"><strong>Archives</strong></h1>
+<h1 id="Referrals"><strong>Referrals</strong></h1>
+<ul>
+<li><a href="https://learn-sys.github.io">The Learn-Sys Project</a></li>
+<li><a href="https://github.com/prakhar1989/awesome-courses" target="_blank" rel="noopener">Awesome CS Courses</a></li>
+<li><a href="https://github.com/ossu/computer-science" target="_blank" rel="noopener">OSSU</a></li>
+</ul>
+
+</div>
+
+
+<script src="/en/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="Proposal-for-a-Systems-Reading-Group">Proposal for a Systems Reading Group</h1>
+<p>We propose a reading group on the purpose of advanced systems education. In this reading group, group members read and present important papers in the field of computer systems.</p>
+<h2 id="Rule">Rule</h2>
+<ul>
+<li>This event will be held once a week.</li>
+<li>During each event, two teams (with two people in each team) will present.</li>
+<li>Each team will present one of the system papers listed below. They will have twenty minutes for the presentation. During the 20-minute presentation, both team members should talk for longer than 5 minutes.</li>
+<li>After the presentation, there will be a 20-minute Q&amp;A and 20-minute group discussion (with up to 6 people in each group). During the Q&amp;A, everyone is encouraged to ask questions and give comments. If noone volunteers, the host of the event will decide who to talk next.</li>
+<li>Before each event, the presenters should upload their slides to this website. The slides should be open-cource under a CC BY-NC-SA 4.0 licenses. The presenters are expected to create the slide themselves; however, they may use any data, text, figure, or code in the original paper.</li>
+<li>Before each event, members of the reading group should study the materials listed below, including watching videos and reading papers.</li>
+<li>Because it is hard to discuss with hundreds of people, this event has a prerequest. To join the group, one need to finish at least 60% of labs of an operating systems course where they are required to implement a whole hardware-bootable operating system from scratch (such as MIT 6.S081).</li>
+<li>The reading group only has 40 slots. If more than 40 people are qualified, they should be splitted into multiple groups.</li>
+</ul>
+<h2 id="Paper-List-and-Schedule">Paper List and Schedule</h2>
+<h3 id="W0：Icebreaking">W0：Icebreaking</h3>
+<ul>
+<li>Introduce yourself, find a teammate, and have fun.</li>
+</ul>
+<h3 id="W1-Operating-Systems">W1: Operating Systems</h3>
+<ul>
+<li><a href="https://people.inf.ethz.ch/troscoe/pubs/sosp09-barrelfish.pdf" target="_blank" rel="noopener">The Multikernel: A new OS architecture for scalable multicore systems</a></li>
+<li><a href="https://www.usenix.org/system/files/osdi18-shan.pdf" target="_blank" rel="noopener">LegoOS: A Disseminated, Distributed OS for Hardware Resource Disaggregation</a> (Is this paper too new? Do we need a more classic one?)</li>
+</ul>
+<h3 id="W2-Virtualization">W2: Virtualization</h3>
+<ul>
+<li><a href="https://web.eecs.umich.edu/~mosharaf/Readings/Live-Migrate-VM.pdf" target="_blank" rel="noopener">Live Migration of Virtual Machines</a></li>
+<li><a href="https://www.usenix.org/legacy/event/osdi02/tech/full_papers/waldspurger/waldspurger.pdf" target="_blank" rel="noopener">Memory Resource Management in VMware ESX Server</a></li>
+</ul>
+<h3 id="W3-Distributed-Systems">W3: Distributed Systems</h3>
+<ul>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf" target="_blank" rel="noopener">The Google File System</a></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf" target="_blank" rel="noopener">MapReduce: Simplified Data Processing on Large Clusters</a></li>
+</ul>
+<h3 id="W4-Program-Analysis-and-Debugging">W4: Program Analysis and Debugging</h3>
+<ul>
+<li><a href="http://www.doc.ic.ac.uk/~cristic/papers/klee-osdi-08.pdf" target="_blank" rel="noopener">KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems Programs</a> (Is this the best paper of symbolic execution?)</li>
+<li><a href="https://people.eecs.berkeley.edu/~kubitron/courses/cs262a-F14/handouts/papers/dunlap02.pdf" target="_blank" rel="noopener">ReVirt: enabling intrusion analysis through virtual-machine logging and replay</a></li>
+</ul>
+<h3 id="W5-Security-and-Pravacy">W5: Security and Pravacy</h3>
+<ul>
+<li><a href="https://meltdownattack.com/meltdown.pdf" target="_blank" rel="noopener">Meltdown</a> and <a href="https://spectreattack.com/spectre.pdf" target="_blank" rel="noopener">Specture</a> (two papers in a pack)</li>
+<li><a href="https://www.usenix.org/legacy/events/osdi10/tech/full_papers/Enck.pdf" target="_blank" rel="noopener">TaintDroid: an information-flow tracking system for realtime privacy monitoring on smartphones</a></li>
+</ul>
+<h3 id="W6-FPGA-and-GPU">W6: FPGA and GPU</h3>
+<ul>
+<li>What’s the best paper for FPGA? AmorphOS, Coyote, Cascade, or Catapult?</li>
+<li>What’s the best paper for GPU/CUDA?</li>
+</ul>
+<h3 id="W7-Networking">W7: Networking</h3>
+<ul>
+<li>Infiniswap?</li>
+<li>What’s the best networking paper to read? Find one from Facebook?</li>
+</ul>
+<h3 id="W8-Machine-Learning">W8: Machine Learning</h3>
+<ul>
+<li><a href="http://download.tensorflow.org/paper/whitepaper2015.pdf" target="_blank" rel="noopener">TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems</a></li>
+<li><a href="https://arxiv.org/pdf/1802.04799.pdf" target="_blank" rel="noopener">TVM: An Automated End-to-End Optimizing Compiler for Deep Learning</a></li>
+</ul>
+<h3 id="W9-New-Memory">W9: New Memory</h3>
+<ul>
+<li>Transactional memory</li>
+<li>NVM</li>
+</ul>
+<h3 id="W10-Formal-Verification">W10: Formal Verification</h3>
+<ul>
+<li>What’s the best and most understandable paper for formal verification?</li>
+</ul>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/en/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/en/js/book-toc.js"></script>
+
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/en/js/book.js"></script>

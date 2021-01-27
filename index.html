@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/en/favicon.png" />
+    
+
+    <title>
+        
+          Home - LearnSys
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/en/css/book.css">
+
+    
+<script src="/en/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/en/">
+    <img src="/en/favicon.png">
+    <span>LEARNSYS</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <ul>
+<li><a href="/en"><strong>Home</strong></a></li>
+</ul>
+<h1 id="Courses-and-Activities"><strong>Courses and Activities</strong></h1>
+<ul>
+<li><a href="/en/csapp">CSAPP</a></li>
+<li><a href="/en/6s081">6.S081/6.828</a></li>
+<li><a href="/en/6824">6.824</a></li>
+<li><a href="/en/reading">Reading Group</a></li>
+</ul>
+<h1 id="Archives"><strong>Archives</strong></h1>
+<h1 id="Referrals"><strong>Referrals</strong></h1>
+<ul>
+<li><a href="https://learn-sys.github.io">The Learn-Sys Project</a></li>
+<li><a href="https://github.com/prakhar1989/awesome-courses" target="_blank" rel="noopener">Awesome CS Courses</a></li>
+<li><a href="https://github.com/ossu/computer-science" target="_blank" rel="noopener">OSSU</a></li>
+</ul>
+
+</div>
+
+
+<script src="/en/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="A-Computer-Systems-Self-Learner’s-Community">A Computer Systems Self-Learner’s Community</h1>
+<p>This is a volunteer-driven community that aims at providing a communication platform and an information board for students who want to learn computer systems through public courses available on the Internet. 😃</p>
+<h2 id="Courses-and-Activities">Courses and Activities</h2>
+<ul>
+<li>CMU CSAPP: Introduction to Computer Systems 🔥</li>
+<li>MIT 6.S081/6.828: Build the OS Yourself</li>
+<li>MIT 6.824: Distributed System</li>
+</ul>
+<h2 id="Call-for-Attendees">Call for Attendees</h2>
+<p>We encourage everyone who has passion with computer systems to join the community. The links for chatrooms are published in each course page.</p>
+<h2 id="Call-for-Volunteers">Call for Volunteers</h2>
+<p>We need volunteers to create chatrooms for people to communicate, update this website, and build the whole community. If you are interested, feel free to submit <a href="https://github.com/learn-sys/en/pulls" target="_blank" rel="noopener">Pull Requests</a> or ask us to add you to the GitHub organization via <a href="https://github.com/learn-sys/en/issues" target="_blank" rel="noopener">GitHub Issues</a>.</p>
+<h2 id="News">News</h2>
+<ul>
+<li>2021/01/01 Happy New Year!</li>
+</ul>
+
+</div>
+
+
+
+
+<script src="/en/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/en/js/book-toc.js"></script>
+
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/en/js/book.js"></script>
